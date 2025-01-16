@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 .poppins-regular {
   font-family: 'Poppins', serif;
   font-weight: 400;
@@ -61,4 +64,22 @@
 
 .marquee-content img {
   flex-shrink: 0;
+}
+
+
+/* Services html code */
+.hover01 figure {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hover01 figure img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.hover01 figure:hover img {
+  transform: scale(1.1);
 }
