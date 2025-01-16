@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The Bunny Teeth Photography</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Adamina&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c0fbdcbfe4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="bg-white shadow-sm fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-20 items-center">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+              <img class="h-16" src="../../Images/logo.png" alt="Logo" />
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center space-x-10 poppins-regular">
+              <a
+                href="#"
+                class="text-gray-900 border-b-2 border-amber-500 px-1 py-2 text-md font-medium"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium"
+                >About us</a
+              >
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium"
+                >Services</a
+              >
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium"
+                >Gallery</a
+              >
+              <a
+                href="#"
+                class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium"
+                >Contact US</a
+              >
+            </div>
+
+            <!-- Book Now Button -->
+            <div class="flex items-center">
+              <button
+                class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2 rounded-full text-sm font-medium"
+              >
+                Book Now
+              </button>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+              <button
+                type="button"
+                class="text-gray-500 hover:text-gray-900 p-2"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden">
+          <div class="px-2 pt-2 pb-3 space-y-1 poppins-regular">
+            <a
+              href="#"
+              class="text-gray-900 block px-3 py-2 text-base font-medium"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium"
+              >About us</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium"
+              >Gallery</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium"
+              >Contact US</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mt-[80px]">
+      <div class="px-5">
+        <img
+          class="rounded-2xl"
+          src="../../Images/services/toddlers/main_bg.jpg"
+          alt="baby-bg"
+        />
+      </div>
+
+      <div id="gallery" class="container-fluid mx-auto p-5">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <!-- First Column -->
+          <div class="col-span-1 p-0">
+            <img
+              class="rounded-xl w-full h-auto"
+              src="../../Images/services/toddlers/portrait1.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- Second Column (hidden on small screens) -->
+          <div class="hidden md:grid md:col-span-1 gap-3">
+            <div class="p-0">
+              <img
+                class="rounded-xl w-full h-auto"
+                src="../../Images/services/toddlers/land1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="p-0">
+              <img
+                class="rounded-xl w-full h-auto"
+                src="../../Images/services/toddlers/land2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- Third Column -->
+          <div class="col-span-1 p-0">
+            <img
+              class="rounded-xl w-full h-auto"
+              src="../../Images/services/toddlers/portrait2.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- Landscape Image (visible only on small screens) -->
+          <div class="col-span-2 md:hidden">
+            <img
+              class="rounded-xl w-full h-auto"
+              src="../../Images/services/toddlers/landscape.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="py-10">
+        <h1
+          class="poppins-medium text-md lg:text-xl py-5 yellow-text text-center"
+        >
+          TODDLER
+        </h1>
+        <h3
+          class="poppins-regular text-center text-lg lg:text-2xl px-[20px] lg:px-20"
+        >
+          Explore a world of enchanting moments with The Bunny Teeth
+          Photography. Our team specializes in capturing the pure joy and
+          innocence of toddlers and young kids. From playful candid shots to
+          beautifully styled portraits, our high-quality photoshoots create
+          treasured memories that last a lifetime. Let us frame your child's
+          unique personality in each click, turning fleeting moments into
+          timeless treasures. Discover the magic of childhood through our lens.
+        </h3>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="p-2">
+      <div class="h-full p-6 md:p-10 bg-black/90 rounded-xl">
+        <div
+          class="flex flex-col items-start md:flex-row md:justify-between md:items-start"
+        >
+          <!-- Contact details -->
+          <div>
+            <p
+              class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-2"
+            >
+              <i class="fa-solid fa-phone mr-2"></i> +91 78249 99900
+            </p>
+            <p
+              class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-2"
+            >
+              <i class="fa-solid fa-envelope mr-2"></i>
+              hello@thebunnyteethphotography.com
+            </p>
+            <p
+              class="text-sm lg:text-base xl:text-2xl poppins-regular text-white my-2"
+            >
+              <i class="fa-solid fa-location-dot mr-2"></i> 2nd Street, Ram
+              Nagar North,<br />
+              Madipakkam, Chennai 600091.
+            </p>
+          </div>
+
+          <!-- Quote -->
+          <div>
+            <p
+              class="hidden md:block text-end text-base lg:text-2xl xl:text-2xl poppins-regular text-white"
+            >
+              Let's create timeless memories through the <br />
+              lens of artistry. Reach out, and weave your <br />
+              unique story into captivating frames.
+            </p>
+          </div>
+        </div>
+
+        <!-- Logo & Copyright -->
+        <div class="mt-10 lg:-mt-3 xl:-mt-10 flex flex-col items-center">
+          <img class="w-32 lg:w-52" src="../../Images/logo.png" alt="Logo" />
+          <p
+            class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-center text-white my-2"
+          >
+            Copyright @
+            <span class="text-[#FFB200]">The Bunny Teeth Photography</span>. All
+            Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
