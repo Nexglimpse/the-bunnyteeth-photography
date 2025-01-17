@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0000"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>The Bunny Teeth Photography</title>
     <link rel="stylesheet" href="style.css" />
@@ -25,7 +26,7 @@
   </head>
   <body>
     <header>
-      <nav class="bg-white shadow-sm fixed top-0 w-full z-50">
+      <nav class=" shadow-sm absolute top-0 w-full z-50">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
               <!-- Logo -->
@@ -35,21 +36,21 @@
       
               <!-- Navigation Links -->
               <div class="hidden md:flex items-center space-x-10 poppins-regular">
-                <a href="#" class="text-gray-900 border-b-2 border-amber-500 px-1 py-2 text-md font-medium">Home</a>
-                <a href="index.html#about" class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium">About us</a>
-                <a href="services/index.html" class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium">Services</a>
-                <a href="./gallery/index.html" class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium">Gallery</a>
-                <a href="index.html#contact" class="text-gray-500 hover:text-gray-900 px-1 py-2 text-md font-medium">Contact Us</a>
+                <a href="#" class="text-white border-b-2 border-amber-500 px-1 py-2 text-md font-medium">Home</a>
+                <a href="index.html#about" class="text-gray-200 hover:text-white px-1 py-2 text-md font-medium">About us</a>
+                <a href="services/index.html" class="text-gray-200 hover:text-white px-1 py-2 text-md font-medium">Services</a>
+                <a href="./gallery/index.html" class="text-gray-200 hover:text-white px-1 py-2 text-md font-medium">Gallery</a>
+                <a href="index.html#contact" class="text-gray-200 hover:text-white px-1 py-2 text-md font-medium">Contact Us</a>
               </div>
       
               <!-- Book Now Button -->
               <div class="hidden md:flex items-center">
-                <a href="#" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full text-sm font-medium">Book Now</a>
+                <a href="./book/index.html" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full text-sm font-medium">Book Now</a>
               </div>
       
               <!-- Mobile menu button -->
               <div class="md:hidden">
-                <button id="menu-toggle" type="button" class="text-gray-500 hover:text-gray-900 p-2">
+                <button id="menu-toggle" type="button" class="text-gray-100 hover:text-gray-100 p-2">
                   <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                   </svg>
@@ -59,14 +60,14 @@
           </div>
       
           <!-- Mobile menu -->
-          <div id="mobile-menu" class="hidden md:hidden">
+          <div id="mobile-menu" class="hidden md:hidden bg-white">
             <div class="px-3 pt-2 pb-3 space-y-1 poppins-regular text-center">
               <a href="#" class="text-gray-900 block px-3 py-2 text-base font-medium border-b">Home</a>
               <a href="index.html#about" class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium border-b">About us</a>
               <a href="services/index.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium border-b">Services</a>
               <a href="./gallery/index.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium border-b">Gallery</a>
               <a href="index.html#contact" class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium">Contact Us</a>
-              <a href="#" class="text-gray-100 hover:text-white bg-amber-500 rounded-sm block px-3 py-2 text-base font-medium">Book Now</a>
+              <a href="./book/index.html" class="text-gray-100 hover:text-white bg-amber-500 rounded-sm block px-3 py-2 text-base font-medium">Book Now</a>
             </div>
           </div>
         </nav>
@@ -82,17 +83,23 @@
         </script>
     </header>
 
-    <main class="mt-[80px]">
+    <main class="">
       <!-- Hero Bg -->
        <div>
       <div
         class="transition-all duration-1000 ease-in-out bg-cover bg-no-repeat bg-center w-full h-screen"
-        id="home-bg"
+        id="home-bg" style="background-attachment: fixed;"
       >
-        <div class="h-4/5 flex flex-col justify-end items-end p-5">
-          <!-- <h1 class="poppins-bold text-white/80 text-3xl md:text-4xl">
-            Making Memories Tangible
-          </h1> -->
+        <div class="bg-black/30 h-full flex  justify-center items-end pb-32 lg:pb-28 ">
+          <div>
+          <h1 class="poppins-semibold text-center text-white/80 text-sm md:text-xl">
+            THE BUNNY TEETH
+          </h1>
+          <div>
+           <h1 class="poppins-semibold  text-2xl text-center text-amber-500 md:text-4xl">PHOTOGRAPHY</h1> 
+          </div>
+          <p class="poppins-semibold text-white  text-2xl text-center md:text-6xl pt-3 md:pt-5">"Making Memories <span class=" text-amber-500">Tangible</span>"</p>
+        </div>
         </div>
       </div>
     </div>
