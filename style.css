@@ -1,6 +1,11 @@
 html{
   scroll-behavior: smooth;
 }
+.poppins-light {
+  font-family: 'Poppins', serif;
+  font-weight: 300;
+  font-style: normal;
+}
 .poppins-regular {
   font-family: 'Poppins', serif;
   font-weight: 400;

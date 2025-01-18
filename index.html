@@ -3,115 +3,179 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0000"/>
+    <meta name="theme-color" content="#0000" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>The Bunny Teeth Photography</title>
     <link rel="stylesheet" href="style.css" />
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Adamina&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/c0fbdcbfe4.js"
-      crossorigin="anonymous"
-    ></script>
-
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <nav class="shadow-sm absolute top-0 w-full z-50">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-              <!-- Logo -->
-              <div class="flex-shrink-0">
-                <a href="#"><img class="h-16" src="./Images/logo.png" alt="Logo" /></a>
-              </div>
-      
-              <!-- Navigation Links -->
-              <div class="hidden md:flex items-center space-x-10 poppins-regular">
-                <a href="#" class="text-white border-b-2 border-amber-500 px-1 py-2 text-md font-medium">Home</a>
-                <a href="index.html#about" class="text-gray-200 hover:text-white px-1 py-2 text-md font-medium">About us</a>
-                <a href="services/index.html" class="text-gray-200 hover:text-white px-1 py-2 text-md font-medium">Services</a>
-                <a href="./gallery/index.html" class="text-gray-200 hover:text-white px-1 py-2 text-md font-medium">Gallery</a>
-                <a href="index.html#contact" class="text-gray-200 hover:text-white px-1 py-2 text-md font-medium">Contact Us</a>
-              </div>
-      
-              <!-- Book Now Button -->
-              <div class="hidden md:flex items-center">
-                <a href="./book/index.html" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full text-sm font-medium">Book Now</a>
-              </div>
-      
-              <!-- Mobile menu button -->
-              <div class="md:hidden">
-                <button id="menu-toggle" type="button" class="text-gray-100 hover:text-gray-100 p-2">
-                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </button>
-              </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-20 items-center">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+              <a href="#"
+                ><img class="h-16" src="./Images/logo.png" alt="Logo"
+              /></a>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center space-x-10 poppins-regular">
+              <a
+                href="#"
+                class="text-white border-b-2 border-amber-500 px-1 py-2 text-md font-medium"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="text-gray-200 hover:text-white px-1 py-2 text-md font-medium"
+                >About us</a
+              >
+              <a
+                href="#services"
+                class="text-gray-200 hover:text-white px-1 py-2 text-md font-medium"
+                >Services</a
+              >
+              <a
+                href="#gallery"
+                class="text-gray-200 hover:text-white px-1 py-2 text-md font-medium"
+                >Gallery</a
+              >
+              <a
+                href="#contact"
+                class="text-gray-200 hover:text-white px-1 py-2 text-md font-medium"
+                >Contact Us</a
+              >
+            </div>
+
+            <!-- Book Now Button -->
+            <div class="hidden md:flex items-center">
+              <a
+                href="./book"
+                class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full text-sm font-medium"
+                >Book Now</a
+              >
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+              <button
+                id="menu-toggle"
+                type="button"
+                class="text-gray-100 hover:text-gray-100 p-2">
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
             </div>
           </div>
-      
-          <!-- Mobile menu -->
-          <div id="mobile-menu" class="hidden md:hidden bg-white">
-            <div class="px-3 pt-2 pb-3 space-y-1 poppins-regular text-center">
-              <a href="#" class="text-gray-900 block px-3 py-2 text-base font-medium border-b">Home</a>
-              <a href="index.html#about" class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium border-b">About us</a>
-              <a href="services/index.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium border-b">Services</a>
-              <a href="./gallery/index.html" class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium border-b">Gallery</a>
-              <a href="index.html#contact" class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium">Contact Us</a>
-              <a href="./book/index.html" class="text-gray-100 hover:text-white bg-amber-500 rounded-sm block px-3 py-2 text-base font-medium">Book Now</a>
-            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+          <div class="px-3 pt-2 pb-3 space-y-1 poppins-regular text-center">
+            <a
+              href="#"
+              class="text-gray-900 block px-3 py-2 text-base font-medium border-b"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium border-b"
+              >About us</a
+            >
+            <a
+              href="#services"
+              class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium border-b"
+              >Services</a
+            >
+            <a
+              href="#gallery"
+              class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium border-b"
+              >Gallery</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-500 hover:text-gray-900 block px-3 py-2 text-base font-medium"
+              >Contact Us</a
+            >
+            <a
+              href="./book"
+              class="text-gray-100 hover:text-white bg-amber-500 rounded-sm block px-3 py-2 text-base font-medium"
+              >Book Now</a
+            >
           </div>
-        </nav>
-      
-        <script>
-          // JavaScript to toggle the mobile menu
-          const menuToggle = document.getElementById('menu-toggle');
-          const mobileMenu = document.getElementById('mobile-menu');
-      
-          menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-          });
-        </script>
+        </div>
+      </nav>
+
+      <script>
+        // JavaScript to toggle the mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
     </header>
 
     <main class="">
       <!-- Hero Bg -->
-       <div>
-        <a class="play-btn" href="tel:+917824999900"
-        target="_blank" class="z-[1000]"><i class="fa-solid fa-phone mr-2"></i></a>
+      <div>
+        <a
+          class="play-btn"
+          href="tel:+917824999900"
+          target="_blank"
+          class="z-[1000]"
+          ><i class="fa-solid fa-phone mr-2"></i
+        ></a>
         <style>
-         
-
-.play-btn {
-  width: 70px;
-  height: 70px;
-  background: radial-gradient( rgba(255, 217, 0, 0.944) 60%, rgba(142, 121, 0, 0) 62%);
-  border-radius: 50%;
-  position: fixed;
-  bottom: -20px;
-  left: 45px;
-  z-index: 1000;
-  display: block;
-  margin: 100px auto;
-  box-shadow: 0px 0px  rgba(255, 191, 0, 0.944);
-}
-@media (max-width: 768px) {
-  .play-btn {
-    bottom: -50px; /* Adjust position for mobile */
-    left: 20px; /* Adjust position for mobile */
-  }
-}
-/* triangle */
-.play-btn i {
+          .play-btn {
+            width: 70px;
+            height: 70px;
+            background: radial-gradient(
+              rgba(255, 217, 0, 0.944) 60%,
+              rgba(142, 121, 0, 0) 62%
+            );
+            border-radius: 50%;
+            position: fixed;
+            bottom: -20px;
+            left: 45px;
+            z-index: 1000;
+            display: block;
+            margin: 100px auto;
+            box-shadow: 0px 0px rgba(255, 191, 0, 0.944);
+          }
+          @media (max-width: 768px) {
+            .play-btn {
+              bottom: -50px; /* Adjust position for mobile */
+              left: 20px; /* Adjust position for mobile */
+            }
+          }
+          /* triangle */
+          .play-btn i {
             color: #fff;
             font-size: 20px;
             position: absolute;
@@ -120,98 +184,117 @@
             z-index: 100;
             transition: transform 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
           }
-        
 
-/* pulse wave */
-.play-btn:before {
-  content: "";
-  position: absolute;
-  width: 150%;
-  height: 150%;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate1 2s;
-  animation: pulsate1 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgb(243, 214, 1);
-  top: -25%;
-  left: -25%;
-  background: rgba(198, 16, 0, 0);
-}
+          /* pulse wave */
+          .play-btn:before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+            -webkit-animation: pulsate1 2s;
+            animation: pulsate1 2s;
+            -webkit-animation-direction: forwards;
+            animation-direction: forwards;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: steps;
+            animation-timing-function: steps;
+            opacity: 1;
+            border-radius: 50%;
+            border: 5px solid rgb(243, 214, 1);
+            top: -25%;
+            left: -25%;
+            background: rgba(198, 16, 0, 0);
+          }
 
-@-webkit-keyframes pulsate1 {
-  0% {
-    -webkit-transform: scale(0.6);
-    transform: scale(0.6);
-    opacity: 1;
-    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 0;
-    box-shadow: none;
+          @-webkit-keyframes pulsate1 {
+            0% {
+              -webkit-transform: scale(0.6);
+              transform: scale(0.6);
+              opacity: 1;
+              box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75),
+                0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+            }
+            100% {
+              -webkit-transform: scale(1);
+              transform: scale(1);
+              opacity: 0;
+              box-shadow: none;
+            }
+          }
 
-  }
-}
-
-@keyframes pulsate1 {
-  0% {
-    -webkit-transform: scale(0.6);
-    transform: scale(0.6);
-    opacity: 1;
-    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
-  }
-  100% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1);
-    opacity: 0;
-    box-shadow: none;
-
-  }
-}
+          @keyframes pulsate1 {
+            0% {
+              -webkit-transform: scale(0.6);
+              transform: scale(0.6);
+              opacity: 1;
+              box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75),
+                0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+            }
+            100% {
+              -webkit-transform: scale(1, 1);
+              transform: scale(1);
+              opacity: 0;
+              box-shadow: none;
+            }
+          }
         </style>
-       </div>
-       <div>
-      <div
-        class="transition-all duration-1000 ease-in-out bg-cover bg-no-repeat bg-center w-full h-screen"
-        id="home-bg" style="background-attachment: fixed;"
-      >
-        <div class="bg-black/30 h-full flex  justify-center items-end pb-44 lg:pb-28 ">
-          <div>
-          <h1 class="poppins-semibold text-center text-white/80 text-sm md:text-xl">
-            THE BUNNY TEETH
-          </h1>
-          <div>
-           <h1 class="poppins-semibold  text-2xl text-center text-amber-500 md:text-4xl">PHOTOGRAPHY</h1> 
+      </div>
+
+      <div>
+        <div
+          style="
+            transition: all 1s ease-in-out;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+          "
+          id="home-bg"
+          style="background-attachment: fixed">
+          <div
+            class="bg-black/30 h-full flex justify-center items-end pb-44 lg:pb-28">
+            <div>
+              <h1
+                class="poppins-semibold text-center text-white/80 text-sm md:text-xl">
+                THE BUNNY TEETH
+              </h1>
+              <div>
+                <h1
+                  class="poppins-semibold text-2xl text-center text-amber-500 md:text-4xl">
+                  PHOTOGRAPHY
+                </h1>
+              </div>
+              <p
+                class="poppins-semibold text-white text-2xl text-center md:text-6xl pt-3 md:pt-5">
+                "Making Memories <span class="text-amber-500">Tangible</span>"
+              </p>
+            </div>
           </div>
-          <p class="poppins-semibold text-white  text-2xl text-center md:text-6xl pt-3 md:pt-5">"Making Memories <span class=" text-amber-500">Tangible</span>"</p>
-        </div>
         </div>
       </div>
-    </div>
 
       <section id="about">
         <div class="about-us mt-5 lg:mt-10" id="about-us">
           <h1
-            class="poppins-medium text-md lg:text-xl py-3 lg:py-5 yellow-text text-center" data-aos="fade-up"data-aos-duration="1500"
-          >
+            class="poppins-medium text-md lg:text-xl py-3 lg:py-5 yellow-text text-center"
+            data-aos="fade-up"
+            data-aos-duration="1500">
             ABOUT US
           </h1>
-          <p class="poppins-regular text-2xl lg:text-4xl pb-5  text-black text-center" data-aos="fade-up" data-aos-duration="1500"
-                >
-                Crafting memories with a personal touch.
-                </p>
           <p
-            class="poppins-regular text-center text-md lg:text-xl px-[20px] lg:px-20"  data-aos="fade-up" data-aos-duration="1500"
-          >
+            class="poppins-regular text-2xl lg:text-4xl pb-5 text-black text-center"
+            data-aos="fade-up"
+            data-aos-duration="1500">
+            Crafting memories with a personal touch.
+          </p>
+          <p
+            class="poppins-regular text-center text-md lg:text-xl px-[20px] lg:px-20"
+            data-aos="fade-up"
+            data-aos-duration="1500">
             We specialize in capturing moments that tell stories. Explore our
             portfolio of stunning photography projects, where every frame is
             crafted with creativity and precision. With us, you will discover
@@ -219,50 +302,45 @@
             being and freezes it in time for eternity. Join us on this magical
             journey, where precious memories transform into unforgettable
             experiences.
-              </p>
+          </p>
 
-          <div class="marquee overflow-hidden mt-10 relative"  data-aos="fade-up"data-aos-duration="1500">
+          <div
+            class="marquee overflow-hidden mt-10 relative"
+            data-aos="fade-up"
+            data-aos-duration="1500">
             <div class="flex marquee-content animate-marquee">
               <img
                 class="w-[200px] h-[300px] lg:w-[350px] lg:h-[450px] object-cover mx-4"
                 src="./Images/about-1.jpg"
-                alt="Image 1"
-              />
+                alt="Image 1" />
               <img
                 class="w-[200px] h-[350px] lg:w-[350px] lg:h-[500px] object-cover mx-4"
                 src="./Images/about-2.jpg"
-                alt="Image 2"
-              />
+                alt="Image 2" />
               <img
                 class="w-[200px] h-[300px] lg:w-[350px] lg:h-[450px] object-cover mx-4"
                 src="./Images/about-1.jpg"
-                alt="Image 3"
-              />
+                alt="Image 3" />
               <img
                 class="w-[200px] h-[350px] lg:w-[350px] lg:h-[500px] object-cover mx-4"
                 src="./Images/about-2.jpg"
-                alt="Image 4"
-              />
+                alt="Image 4" />
               <img
                 class="w-[200px] h-[300px] lg:w-[350px] lg:h-[450px] object-cover mx-4"
                 src="./Images/about-1.jpg"
-                alt="Image 5"
-              />
+                alt="Image 5" />
               <img
                 class="w-[200px] h-[350px] lg:w-[350px] lg:h-[500px] object-cover mx-4"
                 src="./Images/about-2.jpg"
-                alt="Image 6"
-              />
+                alt="Image 6" />
               <img
                 class="w-[200px] h-[300px] lg:w-[350px] lg:h-[450px] object-cover mx-4"
                 src="./Images/about-1.jpg"
-                alt="Image 7"
-              />
+                alt="Image 7" />
               <img
                 class="w-[200px] h-[350px] lg:w-[350px] lg:h-[500px] object-cover mx-4"
                 src="./Images/about-2.jpg"
-                alt="Image 8"
-              />
+                alt="Image 8" />
             </div>
           </div>
         </div>
@@ -271,19 +349,16 @@
         <div class="my-20 lg:my-24 px-10" id="counter">
           <div
             id="counter-section"
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center"
-          >
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
             <div>
               <h1
                 class="adamina-regular text-4xl lg:text-5xl counter"
-                data-target="500"
-                data-suffix="+"
-              >
+                data-target="1400"
+                data-suffix="+">
                 0+
               </h1>
               <h3
-                class="poppins-medium yellow-text lg:text-lg text-md py-2 lg:py-4"
-              >
+                class="poppins-medium yellow-text lg:text-lg text-md py-2 lg:py-4">
                 Moments Captured
               </h3>
               <p class="poppins-regular text-md px-10">
@@ -295,13 +370,11 @@
               <h1
                 class="adamina-regular text-4xl lg:text-5xl counter"
                 data-target="6"
-                data-suffix="+"
-              >
+                data-suffix="+">
                 0+
               </h1>
               <h3
-                class="poppins-medium yellow-text lg:text-lg text-md py-2 lg:py-4"
-              >
+                class="poppins-medium yellow-text lg:text-lg text-md py-2 lg:py-4">
                 Years Of Experience
               </h3>
               <p class="poppins-regular text-md px-10">
@@ -312,14 +385,12 @@
             <div>
               <h1
                 class="adamina-regular text-4xl lg:text-5xl counter"
-                data-target="250"
-                data-suffix="+"
-              >
+                data-target="1000"
+                data-suffix="+">
                 0+
               </h1>
               <h3
-                class="poppins-medium yellow-text lg:text-lg text-md py-2 lg:py-4"
-              >
+                class="poppins-medium yellow-text lg:text-lg text-md py-2 lg:py-4">
                 Satisfied Clients
               </h3>
               <p class="poppins-regular text-md px-10">
@@ -331,13 +402,11 @@
               <h1
                 class="adamina-regular text-4xl lg:text-5xl counter"
                 data-target="100"
-                data-suffix="%"
-              >
+                data-suffix="%">
                 0%
               </h1>
               <h3
-                class="poppins-medium yellow-text lg:text-lg text-md py-2 lg:py-4"
-              >
+                class="poppins-medium yellow-text lg:text-lg text-md py-2 lg:py-4">
                 Client Satisfaction
               </h3>
               <p class="poppins-regular text-md px-10">
@@ -349,7 +418,7 @@
         </div>
       </section>
 
-      <section id="testimonials" data-aos="fade-up"data-aos-duration="1500">
+      <section id="testimonials" data-aos="fade-up" data-aos-duration="1500">
         <div class="h-1/2 lg:h-screen md:flex">
           <!-- Left Section -->
           <div class="md:w-3/5 yellow-bg py-24">
@@ -357,13 +426,11 @@
               <div class="w-5/6 flex flex-col">
                 <!-- Title Section -->
                 <h1
-                  class="poppins-medium text-md lg:text-xl py-5 text-white text-start"
-                >
+                  class="poppins-medium text-md lg:text-xl py-5 text-white text-start">
                   TESTIMONIALS
                 </h1>
                 <p
-                  class="poppins-regular text-2xl lg:text-4xl pb-5 md:pb-10 text-white text-start"
-                >
+                  class="poppins-regular text-2xl lg:text-4xl pb-5 md:pb-10 text-white text-start">
                   Client Stories
                 </p>
 
@@ -371,8 +438,7 @@
                 <div
                   class="adamina-regular text-md lg:text-2xl text-white text-start overflow-hidden"
                   style="min-height: 12rem"
-                  id="testimonial-content"
-                >
+                  id="testimonial-content">
                   “ Look no further for capturing your baby’s precious moments.
                   The dynamic duo - Sameed and Aishwarya - ensured to provide us
                   with the best service. Irrespective of having done a
@@ -387,83 +453,60 @@
             </div>
             <div class="flex justify-end items-end pt-14 lg:pt-0 px-10">
               <div>
-                <a href="#" id="prev-btn" class="w-fit"
-              >
-             <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="md:w-16 w-12 inline"
-                style="rotate: 135deg"
-                xml:space="preserve"
-                viewBox="0 0 50 50"
-                id="arrow"
-              >
-              <path
-                  d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z" fill="white"
-                ></path>
-              </svg></a>
-            </div>
-            <div>
-              <a href="#" id="next-btn"
-              >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="md:w-16 w-12 inline"
-                style="rotate: 315deg"
-                xml:space="preserve"
-                viewBox="0 0 50 50"
-                id="arrow"
-              >
-              <path
-                  d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"fill="white"
-                ></path>
-              </svg></a>
-            </div>
+                <a href="#" id="prev-btn" class="w-fit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="md:w-16 w-12 inline"
+                    style="rotate: 135deg"
+                    xml:space="preserve"
+                    viewBox="0 0 50 50"
+                    id="arrow">
+                    <path
+                      d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
+                      fill="white"></path></svg>
+                </a>
+              </div>
+              <div>
+                <a href="#" id="next-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="md:w-16 w-12 inline"
+                    style="rotate: 315deg"
+                    xml:space="preserve"
+                    viewBox="0 0 50 50"
+                    id="arrow">
+                    <path
+                      d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
+                      fill="white"></path></svg>
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- Right Section (Static Image) -->
           <div
-            class="md:w-2/5 h-[400px] lg:h-screen  bg-cover bg-center"
-            style="background-image: url('./Images/test.jpg')"
-          ></div>
+            class="md:w-2/5 h-[400px] lg:h-screen bg-cover bg-center"
+            style="background-image: url('./Images/test.jpg')"></div>
         </div>
       </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <section id="services" class="pt-5 lg:pt-20 h-fit lg:mb-10 w-full">
+      <section id="services" class="pt-5 lg:pt-20 h-fit lg:mb-10 w-full">
         <div class="grid grid-cols-1 lg:grid-cols-2">
-          <div class=" lg:px-20" data-aos="fade-up"data-aos-duration="1500">
+          <div class="lg:px-20" data-aos="fade-up" data-aos-duration="1500">
             <h1
-              class="poppins-medium text-md lg:text-xl py-4 yellow-text text-center lg:text-start"
-            >
+              class="poppins-medium text-md lg:text-xl py-4 yellow-text text-center lg:text-start">
               OUR SERVICES
             </h1>
             <h3
-              class="poppins-regular text-center lg:text-start text-2xl lg:text-4xl pb-5 hidden md:flex"
-            >
+              class="poppins-regular text-center lg:text-start text-2xl lg:text-4xl pb-5 hidden md:flex">
               Make memories tangible with<br />our expert services.
             </h3>
             <h3
-              class="poppins-regular px-5 text-center lg:text-start text-2xl lg:text-4xl pb-5 md:hidden"
-            >
+              class="poppins-regular px-5 text-center lg:text-start text-2xl lg:text-4xl pb-5 md:hidden">
               Make memories tangible with our expert services.
             </h3>
             <p
-              class="poppins-regular text-center lg:text-start px-5 lg:px-0 text-md lg:text-lg"
-            >
+              class="poppins-regular text-center lg:text-start px-5 lg:px-0 text-md lg:text-lg">
               At The Bunny Teeth Photography, we pride ourselves on our ability
               to tell stories through our lens. Every shot is an emotion-filled
               tale waiting to be unraveled. Our tech-driven approach enhances
@@ -473,75 +516,85 @@
             </p>
           </div>
           <div class="flex justify-center items-center mt-10 lg:mt-0">
-            <div class="w-3/4 lg:w-fit hover01" data-aos="fade-up"data-aos-duration="2000">
+            <div
+              class="w-3/4 lg:w-fit hover01"
+              data-aos="fade-up"
+              data-aos-duration="2000">
               <figure>
-                <a href="./services/newborn/index.html"><img src="Images/service1.jpg" class="lg:w-full" alt="" /></a>
+                <a href="./services/newborn"
+                  ><img src="Images/service1.jpg" class="lg:w-full" alt=""
+                /></a>
               </figure>
               <div class="flex justify-between">
                 <div>
-                  <a href="./services/newborn/index.html"> <h1 class="poppins-medium text-lg lg:text-3xl pt-4">
-                  Newborn Photography</h1>
+                  <a href="./services/newborn">
+                    <h1 class="poppins-medium text-lg lg:text-3xl pt-4">
+                      Newborn Photography
+                    </h1>
                   </a>
-                  <a href="./services/newborn/index.html"> <p
-              class="poppins-medium text-sm lg:text-xl pt-1 yellow-text text-start"
-            >
-              6 - 40 Days
-              </p></a>
-            </div>
-            <div  class="flex justify-center items-center" >
-              <a href="./services/newborn/index.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-7 lg:w-10 inline ml-3"
-                  style="rotate: 315deg"
-                  xml:space="preserve"
-                  viewBox="0 0 50 50"
-                  id="arrow"
-                >
-                <path
-                    d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
-                    fill="black"
-                    stroke="black"
-                    stroke-width="2"
-                  ></path>
-                </svg></a>
-              </div>
+                  <a href="./services/newborn">
+                    <p
+                      class="poppins-medium text-sm lg:text-xl pt-1 yellow-text text-start">
+                      6 - 40 Days
+                    </p></a
+                  >
+                </div>
+                <div class="flex justify-center items-center">
+                  <a href="./services/newborn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-7 lg:w-10 inline ml-3"
+                      style="rotate: 315deg"
+                      xml:space="preserve"
+                      viewBox="0 0 50 50"
+                      id="arrow">
+                      <path
+                        d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
+                        fill="black"
+                        stroke="black"
+                        stroke-width="2"></path></svg></a>
+                </div>
               </div>
             </div>
           </div>
           <div class="flex justify-center items-center mt-10 lg:mt-[-250px]">
-            <div class="w-3/4 lg:w-fit hover01" data-aos="fade-up"data-aos-duration="2000">
+            <div
+              class="w-3/4 lg:w-fit hover01"
+              data-aos="fade-up"
+              data-aos-duration="2000">
               <figure>
-                <a href="./services/sitter/index.html"><img src="Images/service2.jpg" class="" alt="" /></a>
+                <a href="./services/sitter"
+                  ><img src="Images/service2.jpg" class="" alt=""
+                /></a>
               </figure>
               <div class="flex justify-between">
                 <div>
-                  <a href="./services/sitter/index.html"><h1 class="poppins-medium text-lg lg:text-3xl pt-4">
-                    Sitter Photography
-                  </h1></a>
-                  <a href="./services/sitter/index.html"><p
-                class="poppins-medium text-sm lg:text-xl pt-1 yellow-text text-start"
-              >
-                7 - 12 Months
-                </p></a>
-              </div>
-              <div  class="flex justify-center items-center" >
-                <a href="./services/sitter/index.html">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-7 lg:w-10 inline ml-3"
-                    style="rotate: 315deg"
-                    xml:space="preserve"
-                    viewBox="0 0 50 50"
-                    id="arrow"
+                  <a href="./services/sitter"
+                    ><h1 class="poppins-medium text-lg lg:text-3xl pt-4">
+                      Sitter Photography
+                    </h1></a
                   >
-                    <path
-                      d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
-                      fill="black"
-                      stroke="black"
-                      stroke-width="2"
-                    ></path>
-                  </svg></a>
+                  <a href="./services/sitter"
+                    ><p
+                      class="poppins-medium text-sm lg:text-xl pt-1 yellow-text text-start">
+                      7 - 12 Months
+                    </p></a
+                  >
+                </div>
+                <div class="flex justify-center items-center">
+                  <a href="./services/sitter">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-7 lg:w-10 inline ml-3"
+                      style="rotate: 315deg"
+                      xml:space="preserve"
+                      viewBox="0 0 50 50"
+                      id="arrow">
+                      <path
+                        d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
+                        fill="black"
+                        stroke="black"
+                        stroke-width="2"></path></svg></a>
                 </div>
               </div>
             </div>
@@ -549,79 +602,86 @@
           <div class="flex justify-start items-start"></div>
           <div class="flex justify-end items-start"></div>
           <div class="flex justify-center items-center mt-10 lg:mt-[-250px]">
-            <div class="w-3/4 lg:w-fit hover01" data-aos="fade-up"data-aos-duration="2000">
+            <div
+              class="w-3/4 lg:w-fit hover01"
+              data-aos="fade-up"
+              data-aos-duration="2000">
               <figure>
-
-                <a href="./services/toddler/index.html"><img src="Images/service3.jpg" class="" alt="" /></a>
+                <a href="./services/toddler"
+                  ><img src="Images/service3.jpg" class="" alt=""
+                /></a>
               </figure>
               <div class="flex justify-between">
                 <div>
-                    <a href="./services/toddler/index.html"><h1 class="poppins-medium text-lg lg:text-3xl pt-4">
+                  <a href="./services/toddler"
+                    ><h1 class="poppins-medium text-lg lg:text-3xl pt-4">
                       Toddler & Young Kids
-                    </h1></a>
-                  
-                  <a href="./services/toddler/index.html">
-                    <p
-                class="poppins-medium text-sm lg:text-xl pt-1 yellow-text  lg:text-start"
-              >
-                1 - 3 Years
-                </p>
-                  </a>
-              </div>
-              <div  class="flex justify-center items-center" >
-                <a href="./services/toddler/index.html">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-7 lg:w-10 inline ml-3"
-                    style="rotate: 315deg"
-                    xml:space="preserve"
-                    viewBox="0 0 50 50"
-                    id="arrow"
+                    </h1></a
                   >
-                    <path
-                      d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
-                      fill="black"
-                      stroke="black"
-                      stroke-width="2"
-                    ></path>
-                  </svg></a>
+
+                  <a href="./services/toddler">
+                    <p
+                      class="poppins-medium text-sm lg:text-xl pt-1 yellow-text lg:text-start">
+                      1 - 3 Years
+                    </p>
+                  </a>
+                </div>
+                <div class="flex justify-center items-center">
+                  <a href="./services/toddler">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-7 lg:w-10 inline ml-3"
+                      style="rotate: 315deg"
+                      xml:space="preserve"
+                      viewBox="0 0 50 50"
+                      id="arrow">
+                      <path
+                        d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
+                        fill="black"
+                        stroke="black"
+                        stroke-width="2"></path></svg></a>
                 </div>
               </div>
             </div>
           </div>
           <div class="flex justify-center items-center mt-10 lg:mt-[-250px]">
-            <div class="w-3/4 lg:w-fit hover01" data-aos="fade-up"data-aos-duration="2000">
+            <div
+              class="w-3/4 lg:w-fit hover01"
+              data-aos="fade-up"
+              data-aos-duration="2000">
               <figure>
-                <a href="./services/family/index.html"><img src="Images/service4.jpg" class="" alt="" /></a>
+                <a href="./services/family"
+                  ><img src="Images/service4.jpg" class="" alt=""
+                /></a>
               </figure>
               <div class="flex justify-between">
                 <div>
-                  <a href="./services/family/index.html"><h1 class="poppins-medium text-lg lg:text-3xl pt-4">
-                    Family Photography
-                  </h1></a>
-                  <a href="./services/family/index.html"><p
-                class="poppins-medium text-sm lg:text-xl pt-1 yellow-text text-start"
-              >
-                Indoor & Outdoor
-                </p></a>
-              </div>
-              <div  class="flex justify-center items-center" >
-                <a href="./services/family/index.html">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-7 lg:w-10 inline ml-3"
-                    style="rotate: 315deg"
-                    xml:space="preserve"
-                    viewBox="0 0 50 50"
-                    id="arrow"
+                  <a href="./services/family"
+                    ><h1 class="poppins-medium text-lg lg:text-3xl pt-4">
+                      Family Photography
+                    </h1></a
                   >
-                    <path
-                      d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
-                      fill="black"
-                      stroke="black"
-                      stroke-width="2"
-                    ></path>
-                  </svg></a>
+                  <a href="./services/family"
+                    ><p
+                      class="poppins-medium text-sm lg:text-xl pt-1 yellow-text text-start">
+                      Indoor & Outdoor
+                    </p></a
+                  >
+                </div>
+                <div class="flex justify-center items-center">
+                  <a href="./services/family">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-7 lg:w-10 inline ml-3"
+                      style="rotate: 315deg"
+                      xml:space="preserve"
+                      viewBox="0 0 50 50"
+                      id="arrow">
+                      <path
+                        d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
+                        fill="black"
+                        stroke="black"
+                        stroke-width="2"></path></svg></a>
                 </div>
               </div>
             </div>
@@ -629,100 +689,104 @@
           <div class="flex justify-start items-start"></div>
 
           <div class="lg:py-5">
-            <div class="lg:flex justify-start items-end px-24 h-full hidden">
-              <div
-                href="#"
-                class="px-6 py-3 rounded-full border border-black poppins-regular"
-              >
-                <a href="#" class="">See More Services</a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-7 inline pb-3 ml-3"
-                  style="rotate: 315deg"
-                  xml:space="preserve"
-                  viewBox="0 0 50 50"
-                  id="arrow"
-                >
-                  <path
-                    d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
-                  ></path>
-                </svg>
-              </div>
+            <div class="lg:flex justify-around items-end px-24 h-full hidden">
+              <a href="./services" class="rounded-full">
+                <div
+                  href="#"
+                  class="px-6 py-3 rounded-full border border-black poppins-regular flex justify-center items-center">
+                  <pclass="">See More Services</pclass=>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-7 inline pb-3 ml-3"
+                    style="rotate: 315deg"
+                    xml:space="preserve"
+                    viewBox="0 0 50 50"
+                    id="arrow">
+                    <path
+                      d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"></path>
+                  </svg>
+                </div>
+              </a>
             </div>
           </div>
 
           <div class="flex justify-center items-center mt-10 lg:mt-[-250px]">
-            <div class="w-3/4 lg:w-fit hover01" data-aos="fade-up"data-aos-duration="2000">
+            <div
+              class="w-3/4 lg:w-fit hover01"
+              data-aos="fade-up"
+              data-aos-duration="2000">
               <figure>
-
-                <a href="./services/birthday/index.html"><img src="Images/service5.jpg" class="" alt="" /></a>
+                <a href="./services/birthday"
+                  ><img src="Images/service5.jpg" class="" alt=""
+                /></a>
               </figure>
               <div class="flex justify-between">
                 <div>
-                  <a href="./services/birthday/index.html"><h1 class="poppins-medium text-lg lg:text-3xl pt-4">
-                    Birthday Photography
-                  </h1></a>
-                  <a href="./services/birthday/index.html"><p
-                class="poppins-medium text-sm lg:text-xl pt-1 yellow-text text-start"
-              >
-                1 - 7 Years
-                </p></a>
-              </div>
-              <div  class="flex justify-center items-center" >
-                <a href="./services/birthday/index.html">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-7 lg:w-10 inline ml-3"
-                    style="rotate: 315deg"
-                    xml:space="preserve"
-                    viewBox="0 0 50 50"
-                    id="arrow"
+                  <a href="./services/birthday"
+                    ><h1 class="poppins-medium text-lg lg:text-3xl pt-4">
+                      Birthday Photography
+                    </h1></a
                   >
-                    <path
-                      d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
-                      fill="black"
-                      stroke="black"
-                      stroke-width="2"
-                    ></path>
-                  </svg></a>
+                  <a href="./services/birthday"
+                    ><p
+                      class="poppins-medium text-sm lg:text-xl pt-1 yellow-text text-start">
+                      1 - 7 Years
+                    </p></a
+                  >
+                </div>
+                <div class="flex justify-center items-center">
+                  <a href="./services/birthday">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-7 lg:w-10 inline ml-3"
+                      style="rotate: 315deg"
+                      xml:space="preserve"
+                      viewBox="0 0 50 50"
+                      id="arrow">
+                      <path
+                        d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
+                        fill="black"
+                        stroke="black"
+                        stroke-width="2"></path></svg></a>
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
         <div class="flex justify-center items-end px-10 mt-5 lg:hidden">
-          <div
-            href="#"
-            class="px-4 py-2 rounded-full border border-black poppins-regular"
-          >
-            <a href="#" class="text-sm">See More Services</a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-6 inline pb-3 ml-3"
-              style="rotate: 315deg"
-              xml:space="preserve"
-              viewBox="0 0 50 50"
-              id="arrow"
-            >
-              <path
-                d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
-              ></path>
-            </svg>
-          </div>
-        </div>
-      </section> 
 
-      <section id="gallery" class="h-fit lg:mb-10 mt-10" data-aos="fade-up"data-aos-duration="1500">
+          <a href="./services" class="rounded-full">
+            <div
+              href="#"
+              class="px-4 py-2 rounded-full border border-black poppins-regular flex justify-center items-center">
+              <pclass="">See More Services</pclass=>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 inline pb-3 ml-3"
+                style="rotate: 315deg"
+                xml:space="preserve"
+                viewBox="0 0 50 50"
+                id="arrow">
+                <path
+                  d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section
+        id="gallery"
+        class="h-fit lg:mb-10 mt-10"
+        data-aos="fade-up"
+        data-aos-duration="1500">
         <div class="flex flex-col items-center">
           <h1
-            class="poppins-medium text-md lg:text-xl py-4 yellow-text text-center"
-          >
+            class="poppins-medium text-md lg:text-xl py-4 yellow-text text-center">
             GALLERY
           </h1>
           <h3
-            class="poppins-regular text-2xl lg:text-4xl pb-5 text-black text-center"
-          >
+            class="poppins-regular text-2xl lg:text-4xl pb-5 text-black text-center">
             Unveiling the Artistry
           </h3>
         </div>
@@ -731,248 +795,240 @@
           <ul class="flex space-x-4" id="gallery-navbar">
             <li
               data-target="container1"
-              class="poppins-regular text-base md:text-xl cursor-pointer text-[#FFB200] border-b-4 border-[#FFB200]"
-            >
+              class="poppins-regular text-base md:text-xl cursor-pointer text-[#FFB200] border-b-4 border-[#FFB200]">
               Baby
             </li>
             <li
               data-target="container2"
-              class="poppins-regular text-base md:text-xl cursor-pointer"
-            >
+              class="poppins-regular text-base md:text-xl cursor-pointer">
               Maternity
             </li>
             <li
               data-target="container3"
-              class="poppins-regular text-base md:text-xl cursor-pointer"
-            >
+              class="poppins-regular text-base md:text-xl cursor-pointer">
               Family
             </li>
             <li
               data-target="container4"
-              class="poppins-regular text-base md:text-xl cursor-pointer"
-            >
+              class="poppins-regular text-base md:text-xl cursor-pointer">
               Kids
             </li>
           </ul>
         </nav>
 
-        <div id="container1" class="p-5 grid grid-cols-1 md:grid-cols-3 gap-4" data-aos="zoom-in"data-aos-duration="1000">
+        <div
+          id="container1"
+          class="p-5 grid grid-cols-2 md:grid-cols-3 gap-4"
+          data-aos="zoom-in"
+          data-aos-duration="1000">
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby1.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby1.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby1.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby1.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby1.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby1.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
         </div>
 
         <div
           id="container2"
-          class="hidden p-5 grid grid-cols-2 md:grid-cols-3 gap-4"
-        >
+          class="hidden p-5 grid grid-cols-2 md:grid-cols-3 gap-4">
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby2.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby2.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby2.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby2.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby2.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby2.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
         </div>
 
         <div
           id="container3"
-          class="hidden p-5 grid grid-cols-2 md:grid-cols-3 gap-4"
-        >
+          class="hidden p-5 grid grid-cols-2 md:grid-cols-3 gap-4">
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby3.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby3.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby3.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby3.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby3.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby3.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
         </div>
 
         <div
           id="container4"
-          class="hidden p-5 grid grid-cols-2 md:grid-cols-3 gap-4"
-        >
+          class="hidden p-5 grid grid-cols-2 md:grid-cols-3 gap-4">
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby4.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby4.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby4.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby4.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby4.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
           <div>
             <img
               class="h-auto max-w-full rounded-lg"
               src="./Images/baby4.jpg"
-              alt=""
-            />
+              alt="" />
           </div>
+        </div>
+
+        <div class="flex justify-center items-center">
+          <a href="./gallery" class="rounded-full">
+            <div
+              href="#"
+              class="px-6 py-3 rounded-full border border-black poppins-regular flex justify-center items-center">
+              <pclass="">See More Gallery</pclass=>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7 inline pb-3 ml-3"
+                style="rotate: 315deg"
+                xml:space="preserve"
+                viewBox="0 0 50 50"
+                id="arrow">
+                <path
+                  d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"></path>
+              </svg>
+            </div>
+          </a>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section class="flex flex-col justify-start items-center" id="contact" data-aos="fade-up"data-aos-duration="1500">
+      <section
+        class="flex flex-col justify-start items-center"
+        id="contact"
+        data-aos="fade-up"
+        data-aos-duration="1500">
         <div class="flex flex-col items-center">
           <h1
-            class="poppins-medium text-md lg:text-xl py-4 yellow-text text-center"
-          >
+            class="poppins-medium text-md lg:text-xl py-4 yellow-text text-center">
             CONTACT US
           </h1>
           <h3
-            class="poppins-regular text-2xl lg:text-4xl pb-5 text-black text-center"
-          >
+            class="poppins-regular text-2xl lg:text-4xl pb-5 text-black text-center">
             Get in touch with us !
           </h3>
         </div>
 
         <div
-          class="w-full xl:w-3/4 p-5 gap-4 flex flex-col md:flex-row  justify-start md:justify-between items-center"
-        >
+          class="w-full xl:w-3/4 p-5 gap-4 flex flex-col md:flex-row justify-start md:justify-between items-center">
           <!-- Phone Card -->
           <a
             href="tel:+917824999900"
             target="_blank"
-            class="w-full max-w-96 h-48 p-5 rounded-xl flex flex-col justify-center items-center shadow-md border border-amber-500 "
-          >
+            class="w-full max-w-96 h-48 p-5 rounded-xl flex flex-col justify-center items-center shadow-md border border-amber-500">
             <div
-              class="mb-2 flex justify-center items-center rounded-full w-16 h-16 border border-amber-500 "
-            >
+              class="mb-2 flex justify-center items-center rounded-full w-16 h-16 border border-amber-500">
               <i class="fa-solid fa-phone text-[#FFB200] text-2xl"></i>
             </div>
 
@@ -985,11 +1041,9 @@
           <a
             href="https://www.instagram.com/thebunnyteeth.photography/"
             target="_blank"
-            class="w-full max-w-96 h-48 p-5 rounded-xl flex flex-col justify-center items-center shadow-md border  border-amber-500"
-          >
+            class="w-full max-w-96 h-48 p-5 rounded-xl flex flex-col justify-center items-center shadow-md border border-amber-500">
             <div
-              class="mb-2 flex justify-center items-center rounded-full w-16 h-16 border border-amber-500"
-            >
+              class="mb-2 flex justify-center items-center rounded-full w-16 h-16 border border-amber-500">
               <i class="fa-brands fa-instagram text-[#FFB200] text-2xl"></i>
             </div>
 
@@ -1002,17 +1056,14 @@
           <a
             href="https://maps.app.goo.gl/KnGtiL78DHaNhVk17"
             target="_blank"
-            class="w-full max-w-96 h-48 p-5 rounded-xl flex flex-col justify-center items-center shadow-md border border-amber-500"
-          >
+            class="w-full max-w-96 h-48 p-5 rounded-xl flex flex-col justify-center items-center shadow-md border border-amber-500">
             <div
-              class="mb-2 flex justify-center items-center rounded-full w-16 h-16 border border-amber-500"
-            >
+              class="mb-2 flex justify-center items-center rounded-full w-16 h-16 border border-amber-500">
               <i class="fa-solid fa-location-dot text-[#FFB200] text-2xl"></i>
             </div>
 
             <p
-              class="text-center poppins-regular text-sm text-wrap lg:text-base"
-            >
+              class="text-center poppins-regular text-sm text-wrap lg:text-base">
               2nd Street, Ram Nagar North, Madipakkam, Chennai 600091
             </p>
           </a>
@@ -1027,29 +1078,27 @@
             height="400"
             allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <!-- Book now button -->
-        <div
-                
-                class="px-10 py-3 flex justify-between items-center rounded-full border border-black poppins-regular"
-              >
-                <a href="#">Book Now</a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-7 inline pb-3 ml-3"
-                  style="rotate: 315deg"
-                  xml:space="preserve"
-                  viewBox="0 0 50 50"
-                  id="arrow"
-                >
-                  <path
-                    d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"
-                  ></path>
-                </svg>
-              </div>
+        <a href="./book" class="rounded-full">
+          <div
+            href="#"
+            class="px-6 py-3 rounded-full border border-black poppins-regular flex justify-center items-center">
+            <pclass="">Book Now</pclass=>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7 inline pb-3 ml-3"
+              style="rotate: 315deg"
+              xml:space="preserve"
+              viewBox="0 0 50 50"
+              id="arrow">
+              <path
+                d="M1 26h43.586l-6.293 6.293 1.414 1.414L48.414 25l-8.707-8.707-1.414 1.414L44.586 24H1z"></path>
+            </svg>
+          </div>
+        </a>
       </section>
     </main>
 
@@ -1057,24 +1106,22 @@
     <footer class="p-2 mt-5 lg:mt-10">
       <div class="h-full p-6 md:p-10 bg-black/90 rounded-xl">
         <div
-          class="flex flex-col items-start md:flex-row md:justify-between md:items-start"
-        >
+          class="flex flex-col items-start md:flex-row md:justify-between md:items-start">
           <!-- Contact details -->
           <div>
             <p
-              class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-2 "
-            >
-            <i class="fa-solid fa-phone mr-2"></i> +91 78249 99900
+              class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-2">
+              <i class="fa-solid fa-phone mr-2"></i> +91 78249 99900
             </p>
             <p
-              class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-6"
-            >
-            <i class="fa-solid fa-envelope mr-2"></i> hello@thebunnyteethphotography.com
+              class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-6">
+              <i class="fa-solid fa-envelope mr-2"></i>
+              hello@thebunnyteethphotography.com
             </p>
             <p
-              class="text-sm lg:text-base xl:text-2xl poppins-regular text-white my-2"
-            >
-            <i class="fa-solid fa-location-dot mr-2"></i> 2nd Street, Ram Nagar North,<br />
+              class="text-sm lg:text-base xl:text-2xl poppins-regular text-white my-2">
+              <i class="fa-solid fa-location-dot mr-2"></i> 2nd Street, Ram
+              Nagar North,<br />
               Madipakkam, Chennai 600091.
             </p>
           </div>
@@ -1082,8 +1129,7 @@
           <!-- Quote -->
           <div>
             <p
-              class="hidden md:block text-end text-base lg:text-2xl xl:text-2xl poppins-regular text-white"
-            >
+              class="hidden md:block text-end text-base lg:text-2xl xl:text-2xl poppins-regular text-white">
               Let's create timeless memories through the <br />
               lens of artistry. Reach out, and weave your <br />
               unique story into captivating frames.
@@ -1093,10 +1139,9 @@
 
         <!-- Logo & Copyright -->
         <div class="mt-10 lg:-my-10 flex flex-col items-center">
-          <img class="w-32 lg:w-52" src="../Images/logo.png" alt="Logo" />
+          <img class="w-32 lg:w-52" src="./Images/logo.png" alt="Logo" />
           <p
-            class="text-sm lg:text-base 2xl:text-md poppins-regular text-center text-white my-2"
-          >
+            class="text-sm lg:text-base 2xl:text-md poppins-regular text-center text-white my-2">
             Copyright @
             <span class="text-[#FFB200]">The Bunny Teeth Photography</span>. All
             Rights Reserved.
@@ -1110,6 +1155,5 @@
     <script>
       AOS.init();
     </script>
-
   </body>
 </html>
