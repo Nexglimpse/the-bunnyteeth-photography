@@ -6,6 +6,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>The Bunny Teeth Photography</title>
     <link rel="stylesheet" href="../../style.css" />
+
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,7 +82,7 @@
     </header>
 
     <main class="mt-[80px]">
-      <div class="px-5">
+      <div class="px-5" data-aos="fade-up"data-aos-duration="1000">
         <img
           class="rounded-2xl"
           src="../../Images/services/cakesmash/main_bg.jpg"
@@ -90,7 +93,7 @@
       <div id="gallery" class="container-fluid mx-auto p-5">
         <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
           <!-- First Column -->
-          <div class="col-span-1 p-0">
+          <div class="col-span-1 p-0" data-aos="fade-up"data-aos-duration="1000">
             <img
               class="rounded-xl w-full h-auto"
               src="../../Images/services/cakesmash/portrait1.jpg"
@@ -100,14 +103,14 @@
 
           <!-- Second Column (hidden on small screens) -->
           <div class="hidden md:grid md:col-span-1 gap-3">
-            <div class="p-0">
+            <div class="p-0" data-aos="fade-up"data-aos-duration="1000">
               <img
                 class="rounded-xl w-full h-auto"
                 src="../../Images/services/cakesmash/land1.jpg"
                 alt=""
               />
             </div>
-            <div class="p-0">
+            <div class="p-0" data-aos="fade-up"data-aos-duration="1000">
               <img
                 class="rounded-xl w-full h-auto"
                 src="../../Images/services/cakesmash/land2.jpg"
@@ -117,7 +120,7 @@
           </div>
 
           <!-- Third Column -->
-          <div class="col-span-1 p-0">
+          <div class="col-span-1 p-0" data-aos="fade-up"data-aos-duration="1000">
             <img
               class="rounded-xl w-full h-auto"
               src="../../Images/services/cakesmash/portrait2.jpg"
@@ -126,7 +129,7 @@
           </div>
 
           <!-- Landscape Image (visible only on small screens) -->
-          <div class="col-span-2 md:hidden">
+          <div class="col-span-2 md:hidden" data-aos="fade-up"data-aos-duration="1000">
             <img
               class="rounded-xl w-full h-auto"
               src="../../Images/services/cakesmash/landscape.jpg"
@@ -136,7 +139,7 @@
         </div>
       </div>
 
-      <div class="py-10">
+      <div class="py-10" data-aos="fade-up"data-aos-duration="1000">
         <h1
           class="poppins-medium text-md lg:text-xl py-5 yellow-text text-center"
         >
@@ -157,7 +160,7 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="p-2">
+    <footer class="p-2 mt-5 lg:mt-10">
       <div class="h-full p-6 md:p-10 bg-black/90 rounded-xl">
         <div
           class="flex flex-col items-start md:flex-row md:justify-between md:items-start"
@@ -165,21 +168,19 @@
           <!-- Contact details -->
           <div>
             <p
-              class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-2"
+              class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-2 "
             >
-              <i class="fa-solid fa-phone mr-2"></i> +91 78249 99900
+            <i class="fa-solid fa-phone mr-2"></i> +91 78249 99900
             </p>
             <p
-              class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-2"
+              class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-white my-6"
             >
-              <i class="fa-solid fa-envelope mr-2"></i>
-              hello@thebunnyteethphotography.com
+            <i class="fa-solid fa-envelope mr-2"></i> hello@thebunnyteethphotography.com
             </p>
             <p
               class="text-sm lg:text-base xl:text-2xl poppins-regular text-white my-2"
             >
-              <i class="fa-solid fa-location-dot mr-2"></i> 2nd Street, Ram
-              Nagar North,<br />
+            <i class="fa-solid fa-location-dot mr-2"></i> 2nd Street, Ram Nagar North,<br />
               Madipakkam, Chennai 600091.
             </p>
           </div>
@@ -197,10 +198,10 @@
         </div>
 
         <!-- Logo & Copyright -->
-        <div class="mt-10 lg:-mt-3 xl:-mt-10 flex flex-col items-center">
+        <div class="mt-10 lg:-my-10 flex flex-col items-center">
           <img class="w-32 lg:w-52" src="../../Images/logo.png" alt="Logo" />
           <p
-            class="text-sm lg:text-base 2xl:text-2xl poppins-regular text-center text-white my-2"
+            class="text-sm lg:text-base 2xl:text-md poppins-regular text-center text-white my-2"
           >
             Copyright @
             <span class="text-[#FFB200]">The Bunny Teeth Photography</span>. All
@@ -208,6 +209,11 @@
           </p>
         </div>
       </div>
-    </footer>
+    </footer>  
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
